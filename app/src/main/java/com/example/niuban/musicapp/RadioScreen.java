@@ -15,12 +15,6 @@ public class RadioScreen extends AppCompatActivity {
     }
 
     private void radioNavButtons() {
-        Button button0 = (Button) findViewById(R.id.RadioBackButton);
-        button0.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick (View v){
-                finish();
-            }
-        });
     }
 }

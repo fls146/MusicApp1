@@ -19,7 +19,6 @@
         <activity android:name=".HomeScreen" />
         <activity android:name=".RadioScreen" />
         <activity android:name=".AlarmScreen" />
-        <activity android:name=".NewAlarmScreen" />
         <activity android:name=".NewsScreen"></activity>
     </application>
 

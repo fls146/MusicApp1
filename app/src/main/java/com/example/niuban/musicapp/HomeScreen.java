@@ -16,17 +16,9 @@ public class HomeScreen extends AppCompatActivity {
     }
 
     private void homeNavButtons() {
-        Button button0 = (Button) findViewById(R.id.HomeBackButton);
         Button button1 = (Button) findViewById(R.id.RadioButton);
         Button button2 = (Button) findViewById(R.id.AlarmButton);
         Button button3 = (Button) findViewById(R.id.NewsButton);
-
-        button0.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick (View v){
-                finish();
-            }
-        });
 
         button1.setOnClickListener(new View.OnClickListener() {
 

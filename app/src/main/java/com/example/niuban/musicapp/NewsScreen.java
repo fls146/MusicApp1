@@ -15,12 +15,6 @@ public class NewsScreen extends AppCompatActivity {
     }
 
     private void newsNavButtons() {
-        Button button = (Button) findViewById(R.id.NewsBackButton);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick (View v){
-                finish();
-            }
-        });
     }
 }

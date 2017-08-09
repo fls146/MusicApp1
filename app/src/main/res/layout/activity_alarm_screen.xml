@@ -5,35 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.niuban.musicapp.AlarmScreen"
-    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteY="25dp"
     tools:layout_editor_absoluteX="0dp">
 
     <TextView
         android:id="@+id/AlarmScreenTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alarm Screen"
+        android:text="Alarms"
         android:textSize="36sp"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="165dp"
+        android:layout_marginTop="16dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/AlarmBackButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="16dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/newAlarmButton"
@@ -52,5 +39,21 @@
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="16dp"
         app:layout_constraintLeft_toLeftOf="parent" />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="490dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="69dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ListView
+            android:id="@+id/alarmListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:visibility="visible" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
