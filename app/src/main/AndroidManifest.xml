@@ -21,6 +21,9 @@
         <activity android:name=".RadioScreen" />
         <activity android:name=".AlarmScreen" />
         <activity android:name=".NewsScreen"></activity>
+        <receiver android:name=".AlarmReciever"/>
+        <service android:name=".AlarmSongService"
+            android:enabled="true"></service>
     </application>
 
 </manifest>
