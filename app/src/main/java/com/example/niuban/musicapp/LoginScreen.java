@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 public class LoginScreen extends AppCompatActivity {
 
-    final String LOGIN_LINK = "http://www.utsa.edu";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,8 +30,7 @@ public class LoginScreen extends AppCompatActivity {
 
         registerLink.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(LOGIN_LINK));
-                startActivity(browserIntent);
+                startActivity(new Intent(LoginScreen.this, RegistrationActivity.class));
             }
 
         });
